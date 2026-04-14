@@ -20,6 +20,14 @@ def find_non_surjective_element(mapping: dict, target: set):
     """Return one target element with no input mapping to it, or None if surjective."""
     # === TODO ===
     # Your code here
+    values = set(mapping.values())
+
+    for t in target:
+        if t not in values:
+            return t
+
+    return None
+
     pass
     # === END TODO ===
 
@@ -28,6 +36,8 @@ def my_floor(x: float) -> int:
     """Return floor(x) without using math.floor."""
     # === TODO ===
     # Your code here
+
+
     pass
     # === END TODO ===
 
