@@ -5,7 +5,7 @@ def find_non_injective_pair(mapping: dict) -> tuple | None:
     """Return (x1, x2) where f(x1)==f(x2) and x1!=x2, or None if injective."""
     # === TODO ===
     # Your code here
-    seen {}
+    seen = {}
 
     for k, v in mapping.items():
         if v in seen:
@@ -47,7 +47,8 @@ def my_floor(x: float) -> int:
 
 
 def my_ceil(x: float) -> int:
-    """Return ceil(x) without using math.ceil."""
+    """Return ceil(x
+    ) without using math.ceil."""
     # === TODO ===
     # Your code here
     n = int(x)
