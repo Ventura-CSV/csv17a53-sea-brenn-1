@@ -5,6 +5,13 @@ def find_non_injective_pair(mapping: dict) -> tuple | None:
     """Return (x1, x2) where f(x1)==f(x2) and x1!=x2, or None if injective."""
     # === TODO ===
     # Your code here
+    seen {}
+
+    for k, v in mapping.items():
+        if v in seen:
+            return (seen[v], k) 
+        seen[v] = k
+    return None
     pass
     # === END TODO ===
 
